@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AWS S3 File Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AWS S3 File Management</h1>
+
+    <div class="buttons">
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+        <button onclick="retrieveFiles()">Retrieve</button>
+        <input type="text" id="deleteInput" placeholder="File Name to Delete">
+        <button onclick="deleteFile()">Delete</button>
+    </div>
+
+    <ul id="fileList"></ul>
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1133.0.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
